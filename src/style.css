@@ -235,6 +235,12 @@ h1 {
   background: rgba(254, 221, 205, 0.5);
 }
 
+.divPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #divProfile {
   box-sizing: border-box;
   display: flex;
@@ -254,6 +260,7 @@ h1 {
   align-items: center;
   box-sizing: border-box;
   justify-content: center;
+  width: 70%;
 }
 
 .createPost {
@@ -261,7 +268,6 @@ h1 {
   margin: 0;
   background: #FFFFFF;
   border-radius: 0;
-  box-shadow: none;
 }
 
 #titlePost {
@@ -283,11 +289,29 @@ h1 {
   border: none;
 }
 
+#divPrintPost {
+  width: 80%;
+}
+
 #containerPost {
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 10px 10px;
+  margin: 25px 0;
+  box-sizing: content-box;
+}
+
+#userInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#userPhoto {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 #userName {
@@ -295,15 +319,34 @@ h1 {
 }
 
 #titleP {
-  
+  margin-inline-start: 55px;
 }
+
+#descriptionPost,
+#linkP {
+  margin: 10px 30px;
+}
+
 #linkP {
   color: blue;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);}
+  font-size: 0.8em;
+}
 
 #link {
   width: 50px;
   height: 50px;
+}
+
+#buttonLike {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+#imgBtnLike {
+  width: 40px;
+  height: 40px;
 }
 
 /*  Código de nuestro menu */
